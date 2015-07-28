@@ -2,5 +2,27 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/POC/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/cssparser-0.9.16.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/htmlunit-2.17.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/htmlunit-core-js-2.17.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/httpclient-4.4.1.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/httpcore-4.4.1.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/httpmime-4.4.1.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/jetty-io-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/jetty-util-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/nekohtml-1.9.22.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/serializer-2.7.2.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/websocket-api-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/websocket-client-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/websocket-common-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/xalan-2.7.2.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="/POC/lib/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="output" path="classes"/>
 </classpath>
