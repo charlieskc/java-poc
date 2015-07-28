@@ -5,7 +5,6 @@ import java.util.concurrent.RecursiveAction;
 import java.util.concurrent.ForkJoinTask;
 
 
-
 public class Solver extends RecursiveAction {
   private int[] list;
   public long result;
