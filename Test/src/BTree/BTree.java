@@ -47,7 +47,7 @@ public class BTree {
 			depthFirst(node.getRight());
 	}
 	
-	public void breadthFirst(BTree node){
+	public void breadthFirst(BTree node, int depthOfTree){
 		List<BTree> list = new LinkedList<BTree>();
 		list.add(node);
 		Map<Integer, List<BTree>>  m = new HashMap<Integer, List<BTree>>();
@@ -75,18 +75,32 @@ public class BTree {
 		}
 
 		int i=0;
-		while(true){
-			if(!m.containsKey(Integer.valueOf(i)))
-				break;
-			List<BTree> depthList = m.get(Integer.valueOf(i));
-			System.out.print("At depth " + i + ": ");
+		
+		if(depthOfTree == -1)
+			while(true){
+				if(!m.containsKey(Integer.valueOf(i)))
+					break;
+				List<BTree> depthList = m.get(Integer.valueOf(i));
+				System.out.print("At depth " + i + ": ");
+				for ( BTree n:depthList){
+					System.out.print(n.getValue() + " ");
+				}
+				System.out.println();
+				i++;
+			}
+		else{
+			if(!m.containsKey(Integer.valueOf(depthOfTree))){
+				System.out.print("No element at such depth - " + depthOfTree);
+				return;
+			}
+				List<BTree> depthList = m.get(Integer.valueOf(depthOfTree));
+			System.out.print("At depth " + depthOfTree + ": ");
 			for ( BTree n:depthList){
 				System.out.print(n.getValue() + " ");
 			}
 			System.out.println();
-			i++;
 		}
-		
+			
 	}
 	
 
@@ -114,7 +128,7 @@ public class BTree {
 		root.right.setRight(node);
 		
 		//root.depthFirst(root);
-		root.breadthFirst(root);
+		root.breadthFirst(root, 5);
 	}
 
 }
