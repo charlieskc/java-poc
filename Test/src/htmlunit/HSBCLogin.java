@@ -29,7 +29,7 @@ public class HSBCLogin {
 	    HtmlForm form = page.getFormByName("User");
 
 	    // Enter login and passwd
-	    form.getInputByName("u_UserID").setValueAttribute("charlieskc");
+	    form.getInputByName("u_UserID").setValueAttribute("xxxxxx");
 	    page = (HtmlPage) form.getInputByValue("press").setValueAttribute("click");
 	    List<HtmlAnchor> anchorList = page.getAnchors();
 	    for(HtmlAnchor anchor: anchorList){
@@ -42,7 +42,7 @@ public class HSBCLogin {
 	    }
 	    
 	    HtmlForm passwordform = page.getFormByName("PC_7_0G3UNU10SD0MHTI7EMA0000000000000_pwd");
-	    passwordform.getInputByName("memorableAnswer").setValueAttribute("z0226409");
+	    passwordform.getInputByName("memorableAnswer").setValueAttribute("XXXXXXX");
 	    
 	    HtmlForm secondPasswordform = page.getFormByName("PC_7_0G3UNU10SD0MHTI7EMA0000000000000_2ndpwd");
 	    //secondPasswordform.getInputByName("memorableAnswer").setValueAttribute("z0226409");
